@@ -108,6 +108,9 @@
   .site-head .nav{
     display:none !important;
   }
+  .site-head .nav.open{
+    display:flex !important;
+  }
   .site-head .search{
     grid-column:1 / -1;
     grid-row:2;
