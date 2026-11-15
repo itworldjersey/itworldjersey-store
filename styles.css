@@ -483,3 +483,42 @@
 .site-head .new-main-menu .nav-item:nth-child(4):hover{background:linear-gradient(135deg,#ff3654,#a90026)!important;border-color:#ff7185!important}
 @media (min-width:901px){.site-head .new-menu-toggle,.site-head .menu-details,.site-head .search-row{display:none!important}}
 @media (max-width:900px){.site-head .new-main-menu{display:none!important}.site-head .new-menu-toggle{display:flex!important}.site-head .new-main-menu.open{display:flex!important}}
+
+
+/* MOBILE HEADER FINAL — collapse header gap + anchor menu to header row */
+@media (max-width:900px){
+  .site-head{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .site-head .head-inner{
+    height:86px!important;
+    min-height:86px!important;
+    max-height:86px!important;
+    padding:10px 0!important;
+    margin:0!important;
+    overflow:visible!important;
+  }
+  .site-head .search-row{
+    height:62px!important;
+    min-height:62px!important;
+    max-height:62px!important;
+    padding:0 0 14px!important;
+    margin:0!important;
+    overflow:visible!important;
+  }
+  .site-head .search-row .search{
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+  }
+  .mobile-menu-panel{
+    left:auto!important;
+    right:12px!important;
+    width:min(320px,calc(100vw - 24px))!important;
+    max-height:calc(100vh - 110px)!important;
+    border-radius:12px!important;
+  }
+}
