@@ -9,6 +9,17 @@ if(menuToggle&&mainNav){
     mainNav.classList.toggle("open",open);
     menuToggle.setAttribute("aria-expanded",String(open));
     menuToggle.setAttribute("aria-label",open?"Close menu":"Open menu");
+    if(window.matchMedia("(max-width:900px)").matches){
+      mainNav.style.display=open?"flex":"none";
+      mainNav.style.visibility=open?"visible":"hidden";
+      mainNav.style.opacity=open?"1":"0";
+      mainNav.style.pointerEvents=open?"auto":"none";
+    }else{
+      mainNav.style.display="";
+      mainNav.style.visibility="";
+      mainNav.style.opacity="";
+      mainNav.style.pointerEvents="";
+    }
   };
   menuToggle.addEventListener("click",(event)=>{event.preventDefault();event.stopPropagation();setMenu(!mainNav.classList.contains("open"));});
   mainNav.addEventListener("click",(event)=>{if(event.target.closest("a"))setMenu(false);});
