@@ -15,4 +15,21 @@
 <svg id="shortsSvg" viewBox="0 0 260 190" role="img" aria-label="Matching football shorts preview"><path id="shortsBody" d="M44 18 Q130 31 216 18 L206 90 L177 167 L135 167 L130 93 L125 167 L83 167 L54 90 Z" fill="#111827" stroke="#e5e7eb" stroke-width="3" stroke-linejoin="round"/><path id="shortsAccent" d="M44 18 L64 21 L75 89 L92 155 L83 167 L54 90 Z M216 18 L196 21 L185 89 L168 155 L177 167 L206 90 Z" fill="#ffca28"/><text id="shortsNumber" x="169" y="67" fill="#ffffff" font-size="25" font-weight="900" text-anchor="middle">10</text></svg></div><div class="stage-caption">Concept preview • Final print and fabric details may vary</div></div>
 <div class="preview-footer"><div><b id="previewTeam">IT WORLD</b><span id="previewDetails">Royal blue · Gold · Classic V-neck</span></div><button type="button" class="button red" id="requestQuote">Request a Quote →</button></div></section></div>
 <section class="studio-order" id="orderPanel"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>Like what you see?</h2><p>Send your concept to IT WORLD JERSEY. We’ll confirm price, sizes, fabric options, and production details before you order.</p></div><form id="quoteForm"><label>Your phone (optional)<input id="quotePhone" type="tel" placeholder="+60..." required></label><label>Extra notes (optional)<textarea id="quoteNotes" rows="3" maxlength="600" placeholder="Quantity, sizes, delivery country, special requests..."></textarea></label><button type="submit" class="button red">☏ Send Design Request</button><p id="quoteStatus" role="status" class="studio-hint">This opens an email draft with your design details. The preview image is not attached automatically.</p></form></section>
-</main><footer class="footer"><div class="wrap footer-bottom"><span>⚽ <b>IT WORLD <em>JERSEY</em></b></span><a href="mailto:sales@itworldjersey.store">sales@itworldjersey.store</a><span class="copyright">© 2026 <strong>IT WORLD JERSEY</strong>. All Rights Reserved. Designed by Chit Oo.</span></div></footer></body></html>
+</main><footer class="footer"><div class="wrap footer-bottom"><span>⚽ <b>IT WORLD <em>JERSEY</em></b></span><a href="mailto:sales@itworldjersey.store">sales@itworldjersey.store</a><span class="copyright">© 2026 <strong>IT WORLD JERSEY</strong>. All Rights Reserved. Designed by Chit Oo.</span></div></footer><script>
+(function(){
+  const form=document.getElementById("quoteForm");
+  if(!form)return;
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    const phone=(document.getElementById("quotePhone")||{}).value||"";
+    const notes=(document.getElementById("quoteNotes")||{}).value||"";
+    const team=(document.getElementById("teamName")||{}).value||"";
+    const player=(document.getElementById("playerName")||{}).value||"";
+    const number=(document.getElementById("playerNumber")||{}).value||"";
+    const msg="Hello IT WORLD JERSEY! I would like to request a custom jersey quote.\n\nTeam/Club: "+team+"\nPlayer: "+player+"\nNumber: "+number+"\nPhone: "+phone+"\nNotes: "+notes+"\n\nPlease confirm price, sizes, fabric options and production details. Thank you!";
+    window.location.href="mailto:sales@itworldjersey.store?subject=IT%20WORLD%20JERSEY%20Custom%20Design%20Request&body="+encodeURIComponent(msg);
+    const status=document.getElementById("quoteStatus");
+    if(status)status.textContent="Email draft opened. Please review the details before sending.";
+  });
+})();
+</script></body></html>
