@@ -56,3 +56,17 @@ let slide=0;const dots=[...document.querySelectorAll("#slideDots button")],hero=
 function setSlide(n){slide=(n+banners.length)%banners.length;hero.classList.add("has-photo");hero.style.backgroundImage="linear-gradient(90deg,#05070b66,#05070b22),url('"+banners[slide].src+"')";hero.style.backgroundSize="cover";hero.style.backgroundPosition="center";hero.style.backgroundColor=themes[slide][0];dots.forEach((d,i)=>d.classList.toggle("selected",i===slide));}
 document.getElementById("prevSlide").addEventListener("click",()=>setSlide(slide-1));document.getElementById("nextSlide").addEventListener("click",()=>setSlide(slide+1));dots.forEach((d,i)=>d.addEventListener("click",()=>setSlide(i)));setSlide(0);window.setInterval(()=>setSlide(slide+1),5000);load.addEventListener("click",()=>{shownCount+=24;render()});
 })();
+
+// FINAL MOBILE MENU POSITION — anchor overlay to header row, not full site-head
+const _finalMenuToggle=document.getElementById("menuToggle");
+const _finalMobileMenu=document.getElementById("mobileMenuPanel");
+const _finalHeadInner=document.querySelector(".site-head .head-inner");
+if(_finalMenuToggle&&_finalMobileMenu&&_finalHeadInner){
+  const _finalPositionMenu=()=>{
+    const r=_finalHeadInner.getBoundingClientRect();
+    _finalMobileMenu.style.top=Math.max(0,r.bottom+6)+"px";
+  };
+  const _finalOpen=_finalMobileMenu.classList.contains("open");
+  if(_finalOpen)_finalPositionMenu();
+  window.addEventListener("resize",()=>{if(_finalMobileMenu.classList.contains("open"))_finalPositionMenu();});
+}
