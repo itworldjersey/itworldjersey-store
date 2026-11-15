@@ -247,3 +247,38 @@ body.viewer-open{overflow:hidden}
  .dropdown .drop-trigger{width:100%;min-width:0;justify-content:center;padding-left:3px;padding-right:3px;font-size:11px;}
  .search{order:5;}
 }
+
+/* FINAL MOBILE MENU PANEL: five items stay inside the opened menu on one row */
+@media (max-width:760px){
+  #mainNav.nav.open{
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    width:100%;
+    flex-basis:100%;
+    gap:4px;
+    padding:7px 0;
+    box-sizing:border-box;
+  }
+  #mainNav.nav.open > .nav-link,
+  #mainNav.nav.open > .dropdown,
+  #mainNav.nav.open > .dropdown > .drop-trigger{
+    min-width:0;
+    width:100%;
+    box-sizing:border-box;
+  }
+  #mainNav.nav.open > .nav-link,
+  #mainNav.nav.open > .dropdown > .drop-trigger{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:3px;
+    padding:10px 2px;
+    font-size:10px;
+    white-space:nowrap;
+    text-align:center;
+  }
+  #mainNav.nav.open .nav-ico{min-width:0;font-size:13px}
+  #mainNav.nav.open .nav-live i{font-size:6px;padding:1px 2px}
+  #mainNav.nav.open .dropdown{position:relative}
+  #mainNav.nav.open .dropdown .drop-menu{position:absolute;top:100%;left:0;z-index:1000;width:max-content;min-width:180px}
+}
