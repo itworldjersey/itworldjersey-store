@@ -313,3 +313,11 @@ body.viewer-open{overflow:hidden}
   .quick-icon b{font-size:9px}
   .menu-toggle{width:36px;height:36px}
 }
+
+/* IT WORLD | JERSEY STORE brand mark */
+.brand{align-items:center}
+.brand-logo{width:58px;height:58px;object-fit:contain;flex:0 0 auto}
+.brand > span{display:none}
+@media(max-width:760px){
+  .brand-logo{width:48px;height:48px}
+}
