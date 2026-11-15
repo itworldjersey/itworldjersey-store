@@ -48,3 +48,16 @@
   .menu-toggle{display:flex;align-items:center;justify-content:center;margin-left:auto;flex:0 0 40px;width:40px;height:40px;padding:0}
   .search{order:5;flex:1 0 100%;max-width:none;width:100%}
 }
+
+/* Mobile header final correction: force brand text and right menu without affecting desktop */
+@media (max-width:760px){
+  .site-head .head-inner{position:relative;display:flex;align-items:center;min-height:76px;padding:8px 0;gap:8px;flex-wrap:nowrap}
+  .site-head .brand{display:flex!important;align-items:center;flex:1 1 auto;min-width:0;max-width:calc(100% - 52px);gap:8px;font-size:15px;line-height:1}
+  .site-head .brand-logo{display:block!important;width:54px;height:54px;flex:0 0 54px;object-fit:contain}
+  .site-head .brand>span{display:flex!important;flex:1 1 auto;flex-direction:column;min-width:0;color:#fff;font-size:15px;font-weight:950;line-height:1.05;overflow:hidden}
+  .site-head .brand>span small{display:block!important;color:#b9c0cc;font-size:6.5px;letter-spacing:.55px;margin-top:5px;line-height:1.2;white-space:normal}
+  .site-head .menu-toggle{display:flex!important;position:relative;margin-left:auto;flex:0 0 42px;width:42px;height:42px;padding:0;align-items:center;justify-content:center;z-index:5}
+  .site-head .nav{display:none!important}
+  .site-head .search{order:2;flex:1 0 100%;width:100%;max-width:none}
+  .site-head .head-inner{flex-wrap:wrap}
+}
