@@ -5,6 +5,7 @@
 const menuToggle=document.getElementById("menuToggle");
 const mobileMenu=document.getElementById("mobileMenuPanel");
 const siteHead=document.querySelector(".site-head");
+const headerRow=document.querySelector(".site-head .head-inner");
 if(menuToggle&&mobileMenu&&siteHead){
   const closeMenu=()=>{
     mobileMenu.classList.remove("open");
@@ -14,8 +15,8 @@ if(menuToggle&&mobileMenu&&siteHead){
   };
   const openMenu=()=>{
     if(!window.matchMedia("(max-width:900px)").matches)return;
-    const rect=siteHead.getBoundingClientRect();
-    mobileMenu.style.top=Math.max(0,rect.bottom)+"px";
+    const rect=(headerRow||siteHead).getBoundingClientRect();
+    mobileMenu.style.top=Math.max(0,rect.bottom+6)+"px";
     mobileMenu.classList.add("open");
     mobileMenu.setAttribute("aria-hidden","false");
     menuToggle.setAttribute("aria-expanded","true");
