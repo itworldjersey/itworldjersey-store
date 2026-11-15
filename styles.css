@@ -331,3 +331,9 @@ body.viewer-open{overflow:hidden}
 
 /* Mobile header: keep menu button flush right */
 @media (max-width: 768px){.head-inner{position:relative}.menu-toggle{margin-left:auto;display:flex;align-items:center;justify-content:center}.brand{margin-right:auto}.search{width:100%}}
+
+/* Mobile header: show brand text between logo and right-side menu */
+.brand > span{display:flex;flex-direction:column;justify-content:center;line-height:1.05;min-width:0}
+.brand > span b{display:block;color:#d5a83b;font-size:1em}
+.brand > span small{display:block;color:#b9c0cc;font-size:8px;letter-spacing:1.2px;margin-top:5px;white-space:nowrap}
+@media(max-width:760px){.brand{gap:10px;min-width:0}.brand > span{font-size:15px}.brand > span small{font-size:7px;letter-spacing:.8px}.menu-toggle{margin-left:auto}}
