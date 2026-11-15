@@ -215,3 +215,25 @@
   }
   .site-head .new-menu-toggle{display:none!important;}
 }
+
+
+/* Responsive menu rebuild — CSS-only, works even if JS is unavailable */
+.menu-details{display:none;position:relative;margin-left:auto;z-index:1000}
+.menu-details .new-menu-toggle{list-style:none;display:flex!important;align-items:center;justify-content:center;width:52px;height:52px;padding:0;background:#252a34;color:#fff;border:0;border-radius:10px;font-size:28px;line-height:1;cursor:pointer}
+.menu-details .new-menu-toggle::-webkit-details-marker{display:none}
+.menu-panel{position:absolute;right:0;top:calc(100% + 8px);width:min(300px,calc(100vw - 32px));display:grid;gap:7px;padding:10px;background:#0b1220;border:1px solid #303846;border-radius:12px;box-shadow:0 18px 40px #000b}
+.menu-panel a{display:flex;align-items:center;min-height:48px;padding:12px 16px;background:#202632;color:#fff;border:1px solid #303846;border-radius:9px;font-weight:800;text-decoration:none}
+.menu-panel a:hover,.menu-panel a:focus-visible{background:#303744;box-shadow:0 0 0 1px #fff,0 0 16px #d5a83b88}
+.menu-panel a[aria-disabled="true"]{opacity:.65;cursor:default}
+@media (max-width:1100px){
+  .site-head .new-main-menu{display:none!important}
+  .site-head .menu-details{display:block!important}
+  .site-head .head-inner{display:flex!important;align-items:center!important;gap:10px!important;min-height:86px!important;padding:10px 0!important}
+  .site-head .brand{flex:1 1 auto!important;min-width:0!important}
+  .site-head .menu-details{flex:0 0 auto!important}
+  .site-head .search-row{display:block!important}
+}
+@media (min-width:1101px){
+  .site-head .menu-details{display:none!important}
+  .site-head .new-main-menu{display:flex!important}
+}
