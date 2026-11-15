@@ -291,3 +291,79 @@
   .site-head .new-main-menu{display:none!important}
   .site-head .new-menu-toggle{display:flex!important}
 }
+
+
+/* DESKTOP-SITE HEADER FIX — restore full desktop header on tablet/desktop-site viewport */
+@media (min-width:901px) and (max-width:1100px){
+  .site-head .head-inner{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    min-height:110px!important;
+    padding:10px 0!important;
+    gap:16px!important;
+  }
+  .site-head .brand{
+    display:flex!important;
+    align-items:center!important;
+    flex:0 0 auto!important;
+    min-width:0!important;
+    max-width:430px!important;
+    margin:0!important;
+    gap:10px!important;
+    font-size:20px!important;
+    line-height:1!important;
+  }
+  .site-head .brand-logo{
+    display:block!important;
+    width:86px!important;
+    height:86px!important;
+    flex:0 0 86px!important;
+    object-fit:contain!important;
+  }
+  .site-head .brand>span{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+    min-width:0!important;
+    overflow:visible!important;
+    font-size:20px!important;
+    font-weight:950!important;
+    white-space:nowrap!important;
+  }
+  .site-head .brand>span small{
+    display:block!important;
+    margin-top:6px!important;
+    font-size:8px!important;
+    letter-spacing:1.2px!important;
+    white-space:nowrap!important;
+  }
+  .site-head .new-menu-toggle,
+  .site-head .menu-details{
+    display:none!important;
+  }
+  .site-head .new-main-menu{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:6px!important;
+    flex:1 1 auto!important;
+    min-width:0!important;
+    position:static!important;
+    width:auto!important;
+    margin:0!important;
+    padding:0!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  .site-head .new-main-menu .nav-item{
+    min-height:42px!important;
+    padding:9px 11px!important;
+    font-size:12px!important;
+    white-space:nowrap!important;
+  }
+  .site-head .search-row{
+    display:none!important;
+  }
+}
