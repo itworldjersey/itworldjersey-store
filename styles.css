@@ -102,6 +102,15 @@
 }
 
 
+/* Mobile header layout: keep logo + hamburger on top row; place quick actions between header and search */
+@media(max-width:760px){
+ .brand{order:1}
+ .menu-toggle{order:2;margin-left:auto}
+ .mobile-quick-links{order:3;flex:0 0 100%;width:100%;justify-content:flex-end;margin-left:0}
+ .search{order:4}
+ .nav{order:5}
+}
+
 /* Mobile-only compact menu sizing; desktop navigation remains unchanged */
 @media(max-width:760px){
  .mobile-quick-links{gap:5px}
