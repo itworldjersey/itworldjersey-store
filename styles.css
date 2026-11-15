@@ -522,3 +522,17 @@
     border-radius:12px!important;
   }
 }
+
+/* MOBILE MENU FINAL: fixed overlay anchored to mobile header */
+@media (max-width:900px){
+  #mobileMenuPanel.mobile-menu-panel{
+    position:fixed!important;
+    top:106px!important;
+    right:12px!important;
+    left:auto!important;
+    width:min(320px,calc(100vw - 24px))!important;
+    max-height:calc(100vh - 120px)!important;
+    z-index:9999!important;
+    margin:0!important;
+  }
+}
