@@ -15,8 +15,7 @@ if(menuToggle&&mobileMenu&&siteHead){
   };
   const openMenu=()=>{
     if(!window.matchMedia("(max-width:900px)").matches)return;
-    const rect=(headerRow||siteHead).getBoundingClientRect();
-    mobileMenu.style.top=Math.max(0,rect.bottom+6)+"px";
+    mobileMenu.style.top="";
     mobileMenu.classList.add("open");
     mobileMenu.setAttribute("aria-hidden","false");
     menuToggle.setAttribute("aria-expanded","true");
