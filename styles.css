@@ -321,3 +321,7 @@ body.viewer-open{overflow:hidden}
 @media(max-width:760px){
   .brand-logo{width:48px;height:48px}
 }
+
+/* Production topbar contact layout */
+.top-inner{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.top-inner a{color:inherit;text-decoration:none}
