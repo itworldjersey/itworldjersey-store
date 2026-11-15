@@ -396,3 +396,45 @@ body.viewer-open{overflow:hidden}
     min-width:180px;
   }
 }
+
+/* Mobile navigation: keep existing Live + Shop in the header and restore the missing three menu items. */
+@media (max-width: 900px){
+  #mainNav.nav{
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    width:100%;
+    order:4;
+    gap:4px;
+    padding:6px 0;
+    box-sizing:border-box;
+  }
+  #mainNav.nav > .nav-live,
+  #mainNav.nav > .nav-shop{display:none !important;}
+  #mainNav.nav > .nav-videos,
+  #mainNav.nav > .dropdown,
+  #mainNav.nav > .nav-profile{min-width:0;width:100%;box-sizing:border-box;}
+  #mainNav.nav > .nav-videos,
+  #mainNav.nav > .dropdown > .drop-trigger,
+  #mainNav.nav > .nav-profile{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+    min-height:40px;
+    padding:8px 4px;
+    font-size:11px;
+    white-space:nowrap;
+    text-align:center;
+  }
+  #mainNav.nav .nav-ico{min-width:0;font-size:14px;}
+  #mainNav.nav .dropdown{position:relative;}
+  #mainNav.nav .drop-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:1000;
+    width:max-content;
+    min-width:190px;
+  }
+  #mainNav.nav .dropdown.open .drop-menu{display:block;}
+}
