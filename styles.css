@@ -270,3 +270,46 @@ body.viewer-open{overflow:hidden}
 .store-coming a{display:flex;align-items:center;gap:10px;padding:13px;border:1px solid #e8ebf0;border-radius:10px;background:#fafbfc;color:#303744}
 .store-coming a:hover{border-color:#9aa5b5;background:#f1f4f8}
 @media(max-width:520px){.store-coming{grid-template-columns:1fr}}
+
+
+/* Responsive recovery: compact/tablet-width mobile layout */
+@media(max-width:1000px){
+  .wrap{width:calc(100% - 24px)}
+  .head-inner{gap:8px;min-height:62px;flex-wrap:wrap;padding:9px 0}
+  .brand{font-size:17px}
+  .brand-logo{width:40px;height:40px;border-radius:8px}
+  .mobile-quick-links{display:flex;margin-left:auto;gap:5px}
+  .quick-icon{min-width:54px;height:36px;padding:0 7px;border-radius:8px;gap:4px}
+  .quick-icon b{font-size:10px}
+  .quick-icon span{font-size:22px}
+  .quick-live span{font-size:15px}
+  .menu-toggle{display:block;margin-left:0;flex:0 0 auto;width:40px;height:40px;padding:0;font-size:20px;border-radius:9px}
+  .nav{display:none;order:5;flex-basis:100%;flex-direction:column;align-items:stretch;gap:6px;padding:8px}
+  .nav.open{display:flex}
+  .nav-link{display:flex;width:100%;justify-content:flex-start;padding:10px 12px;border-radius:9px;font-size:14px;line-height:1.25}
+  .nav-ico{min-width:22px;font-size:16px}
+  .search{order:6;flex:1 0 100%;max-width:none}
+  .hero{min-height:310px}
+  .hero-content{width:76%;padding:22px 0 28px 22px}
+  .hero h1{font-size:48px}
+  .hero-art{left:40%;opacity:.8}
+  .hero-side{display:none}
+  .perks{gap:8px;flex-wrap:wrap;font-size:10px}
+  .category-strip{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+  .category-strip a{font-size:20px}
+  .category-strip b{font-size:10px}
+  .section-title{align-items:flex-start;flex-direction:column;gap:3px}
+  .section-title h2{font-size:22px}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .product-art{height:170px}
+  .promo-grid{grid-template-columns:1fr}
+  .footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .foot-note,.foot-contact{grid-column:span 2}
+  .footer-bottom{align-items:flex-start;flex-wrap:wrap}
+}
+@media(max-width:380px){
+  .mobile-quick-links{gap:4px}
+  .quick-icon{min-width:48px;height:34px;padding:0 5px}
+  .quick-icon b{font-size:9px}
+  .menu-toggle{width:36px;height:36px}
+}
