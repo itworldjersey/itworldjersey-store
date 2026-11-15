@@ -438,3 +438,9 @@ body.viewer-open{overflow:hidden}
   }
   #mainNav.nav .dropdown.open .drop-menu{display:block;}
 }
+
+@media (max-width:900px){
+  #mainNav.nav:not(.open){display:grid !important;}
+  #mainNav.nav:not(.open) .drop-menu{display:none;}
+  #mainNav.nav .dropdown.open .drop-menu{display:block !important;}
+}
