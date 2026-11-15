@@ -121,3 +121,11 @@
     margin:0;
   }
 }
+
+
+/* Final mobile menu touch/click fix — mobile only */
+@media (max-width:900px){
+  .site-head .menu-toggle{display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;touch-action:manipulation!important;cursor:pointer!important;position:relative!important;z-index:50!important;}
+  .site-head .nav{display:none!important;}
+  .site-head .nav.open{display:flex!important;visibility:visible!important;opacity:1!important;position:relative!important;z-index:40!important;}
+}
