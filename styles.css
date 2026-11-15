@@ -328,3 +328,6 @@ body.viewer-open{overflow:hidden}
 
 /* Header brand subtitle */
 .brand span small{display:block;font-size:.62em;letter-spacing:.08em;line-height:1.2;white-space:nowrap}
+
+/* Mobile header: keep menu button flush right */
+@media (max-width: 768px){.head-inner{position:relative}.menu-toggle{margin-left:auto;display:flex;align-items:center;justify-content:center}.brand{margin-right:auto}.search{width:100%}}
