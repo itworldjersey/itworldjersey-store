@@ -456,3 +456,30 @@
   .site-head .new-main-menu{gap:4px!important}
   .site-head .new-main-menu .nav-item{padding:7px 7px!important;font-size:10px!important}
 }
+/* OCTOBER MENU CSS — restored visual system */
+.site-head .nav.new-main-menu{
+  display:flex!important;align-items:center!important;gap:7px!important;flex:1 1 auto!important;min-width:0!important;
+  position:static!important;width:auto!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;
+}
+.site-head .new-main-menu .nav-item{
+  display:inline-flex!important;width:auto!important;align-items:center!important;justify-content:center!important;gap:6px!important;
+  min-height:40px!important;padding:11px 15px!important;border:1px solid #272e3b!important;border-radius:9px!important;
+  background:#1b2029!important;color:#fff!important;font-weight:800!important;letter-spacing:normal!important;box-shadow:none!important;
+  white-space:nowrap!important;transform:none!important;transition:transform .2s,box-shadow .2s,background .2s!important;
+}
+.site-head .new-main-menu .nav-item:hover,.site-head .new-main-menu .nav-item:focus-visible{
+  background:#303744!important;box-shadow:0 0 0 1px #fff,0 0 18px #ff173899!important;transform:translateY(-2px)!important;
+}
+.site-head .new-main-menu .nav-item:active{transform:translateY(0)!important}
+.site-head .new-main-menu .nav-item.nav-placeholder{opacity:1!important;cursor:default!important}
+.site-head .new-main-menu .nav-item:nth-child(1){background:linear-gradient(135deg,#304f9b,#182746)!important;border-color:#5479d1!important;box-shadow:0 0 12px #5479d155!important}
+.site-head .new-main-menu .nav-item:nth-child(3){background:linear-gradient(135deg,#6738a6,#321d58)!important;border-color:#8d65d4!important}
+.site-head .new-main-menu .nav-item:nth-child(4){background:linear-gradient(135deg,#ff3654,#a90026)!important;border-color:#ff7185!important;color:#fff!important;box-shadow:0 0 0 1px #ff17383b,0 0 14px #ff17384a!important}
+.site-head .new-main-menu .nav-item:nth-child(5){background:linear-gradient(135deg,#c27a16,#713c08)!important;border-color:#f0b24d!important;color:#fff!important}
+.site-head .new-main-menu .nav-item:nth-child(2):hover,.site-head .new-main-menu .nav-item:nth-child(3):hover,.site-head .new-main-menu .nav-item:nth-child(5):hover{
+  background:#303744!important;border-color:#272e3b!important;box-shadow:0 0 0 1px #fff,0 0 18px #ff173899!important;
+}
+.site-head .new-main-menu .nav-item:nth-child(1):hover{background:linear-gradient(135deg,#304f9b,#182746)!important;border-color:#5479d1!important}
+.site-head .new-main-menu .nav-item:nth-child(4):hover{background:linear-gradient(135deg,#ff3654,#a90026)!important;border-color:#ff7185!important}
+@media (min-width:901px){.site-head .new-menu-toggle,.site-head .menu-details,.site-head .search-row{display:none!important}}
+@media (max-width:900px){.site-head .new-main-menu{display:none!important}.site-head .new-menu-toggle{display:flex!important}.site-head .new-main-menu.open{display:flex!important}}
