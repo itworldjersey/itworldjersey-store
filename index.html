@@ -26,7 +26,16 @@
       <a class="nav-item" href="https://itworldjersey.store/custom-design.html">Custom Design</a>
     </nav>
 
-    <button class="menu-toggle new-menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav" onclick="(function(b){var n=document.getElementById('mainNav');var o=!n.classList.contains('open');n.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o));b.setAttribute('aria-label',o?'Close menu':'Open menu');if(window.matchMedia('(max-width:900px)').matches){n.style.display=o?'flex':'none';n.style.visibility=o?'visible':'hidden';n.style.opacity=o?'1':'0';n.style.pointerEvents=o?'auto':'none';}})(this)">☰</button>
+    <details class="menu-details">
+      <summary class="new-menu-toggle" aria-label="Open menu">☰</summary>
+      <nav class="menu-panel" aria-label="Mobile main menu">
+        <a href="https://itworldjersey.store/">Home</a>
+        <a href="https://itworldjersey.store/shop/">Shop</a>
+        <a href="#" aria-disabled="true" onclick="return false;">Video</a>
+        <a href="https://itworldjersey.store/live/">Live Sale</a>
+        <a href="https://itworldjersey.store/custom-design.html">Custom Design</a>
+      </nav>
+    </details>
   </div>
 
   <div class="wrap search-row">
