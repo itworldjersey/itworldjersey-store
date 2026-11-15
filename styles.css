@@ -282,3 +282,117 @@ body.viewer-open{overflow:hidden}
   #mainNav.nav.open .dropdown{position:relative}
   #mainNav.nav.open .dropdown .drop-menu{position:absolute;top:100%;left:0;z-index:1000;width:max-content;min-width:180px}
 }
+
+
+/* FINAL MOBILE HEADER FIX — header row + menu row + search row
+   Desktop/tablet untouched. Mobile only.
+   Closed: logo + Live + Shop on row 1; hamburger right on row 2; search row 3.
+   Open: Videos | Live | Shop | Custom Design | Profile stay on ONE row inside menu. */
+@media (max-width:760px){
+  .head-inner{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px;
+  }
+
+  .brand{
+    order:1;
+    flex:1 1 auto;
+    min-width:0;
+  }
+
+  .mobile-quick-links{
+    order:2;
+    flex:0 0 auto;
+    width:auto;
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:5px;
+  }
+
+  .menu-toggle{
+    order:3;
+    flex:0 0 auto;
+    width:40px;
+    height:40px;
+    margin-left:0;
+    padding:0;
+    font-size:20px;
+  }
+
+  /* Search stays on its own full-width row. */
+  .search{
+    order:5;
+    flex:1 0 100%;
+    width:100%;
+    max-width:none;
+  }
+
+  /* Menu panel sits between hamburger row and search when opened. */
+  #mainNav.nav{
+    order:4;
+    flex:1 0 100%;
+    width:100%;
+    min-width:0;
+  }
+
+  #mainNav.nav:not(.open){
+    display:none !important;
+  }
+
+  #mainNav.nav.open{
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    align-items:stretch;
+    width:100%;
+    gap:4px;
+    padding:7px 0;
+    box-sizing:border-box;
+  }
+
+  #mainNav.nav.open > .nav-link,
+  #mainNav.nav.open > .dropdown,
+  #mainNav.nav.open > .dropdown > .drop-trigger{
+    width:100%;
+    min-width:0;
+    box-sizing:border-box;
+  }
+
+  #mainNav.nav.open > .nav-link,
+  #mainNav.nav.open > .dropdown > .drop-trigger{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:3px;
+    padding:10px 2px;
+    font-size:10px;
+    line-height:1.2;
+    white-space:nowrap;
+    text-align:center;
+  }
+
+  #mainNav.nav.open .nav-ico{
+    min-width:0;
+    font-size:13px;
+  }
+
+  #mainNav.nav.open .nav-live i{
+    font-size:6px;
+    padding:1px 2px;
+  }
+
+  #mainNav.nav.open .dropdown{
+    position:relative;
+  }
+
+  #mainNav.nav.open .dropdown .drop-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:1000;
+    width:max-content;
+    min-width:180px;
+  }
+}
