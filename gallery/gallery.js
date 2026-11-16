@@ -14,7 +14,18 @@ const searchButton = document.getElementById("gallerySearchButton");
 
 const pad = n => String(n).padStart(4, "0");
 const photoUrl = n => `${PHOTO_R2}/${pad(n)}.webp`;
-const askUrl = n => `${ASK_WA}?text=${encodeURIComponent("Hi IT WORLD JERSEY, I want to ask about Gallery image " + pad(n))}`;
+const askMessage = n => {
+  const name = pad(n);
+  return `Hello..... IT World Jersey
+itworldjersey.store/gallery
+
+Product Name: ${name}
+Product Type  : webp
+Image: ${photoUrl(n)}
+
+Hello IT WORLD JERSEY! I found this product in the gallery. Could you please let me know the current price and the total cost for an item like this?Thank you!`;
+};
+const askUrl = n => `${ASK_WA}?text=${encodeURIComponent(askMessage(n))}`;
 
 let currentPage = 1;
 let query = "";
