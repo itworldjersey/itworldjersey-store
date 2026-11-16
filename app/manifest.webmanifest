@@ -1,0 +1,10 @@
+{
+  "name":"IT WORLD JERSEY",
+  "short_name":"IT WORLD JERSEY",
+  "start_url":"/app/",
+  "scope":"/app/",
+  "display":"standalone",
+  "background_color":"#080b10",
+  "theme_color":"#090b10",
+  "description":"IT WORLD JERSEY mobile storefront launcher"
+}
