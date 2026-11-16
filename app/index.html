@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b10">
+<meta name="description" content="IT WORLD JERSEY mobile app — fast access to Home, Team, Shop, Order and Custom.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="../favicon.svg">
+<title>IT WORLD JERSEY · App</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="app-header">
+    <a class="brand" href="https://itworldjersey.store/">
+      <span class="brand-mark">IT</span>
+      <span><strong>IT WORLD</strong><b>JERSEY</b></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-top">
+      <div><strong>IT WORLD JERSEY</strong><small>Mobile Menu</small></div>
+      <button id="closeMenu" aria-label="Close menu">×</button>
+    </div>
+    <nav>
+      <a href="https://itworldjersey.store/">Home</a>
+      <a href="https://itworldjersey.store/gallery">Team</a>
+      <a href="https://itworldjersey.store/shop">Shop</a>
+      <a href="https://itworldjersey.store/video">Order</a>
+      <a href="https://itworldjersey.store/custom">Custom</a>
+      <div class="menu-divider"></div>
+      <a href="https://itworldjersey.store/legal">Legal</a>
+      <a href="https://itworldjersey.store/privacypolicy">Privacy Policy</a>
+      <a href="https://itworldjersey.store/terms">Terms &amp; Conditions</a>
+      <a href="https://itworldjersey.store/company">Help / Contact</a>
+    </nav>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">IT WORLD JERSEY · MOBILE</p>
+        <h1>FOOTBALL<br><em>JERSEYS</em></h1>
+        <p class="sub">Your jersey world, one tap away.</p>
+        <a class="primary" href="https://itworldjersey.store/shop">Explore Jerseys <span>→</span></a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="glow"></div>
+        <div class="shirt shirt-red"><span>10</span></div>
+        <div class="shirt shirt-blue"><span>7</span></div>
+      </div>
+    </section>
+
+    <section class="quick-grid" aria-label="Quick access">
+      <a href="https://itworldjersey.store/gallery"><span>👕</span><b>Team</b><small>Gallery</small></a>
+      <a href="https://itworldjersey.store/shop"><span>🛍</span><b>Shop</b><small>Jerseys</small></a>
+      <a href="https://itworldjersey.store/video"><span>▶</span><b>Order</b><small>Video</small></a>
+      <a href="https://itworldjersey.store/custom"><span>✍</span><b>Custom</b><small>Design</small></a>
+    </section>
+
+    <section class="feature">
+      <div class="section-head"><div><p class="eyebrow">DISCOVER</p><h2>Built for the jersey journey.</h2></div></div>
+      <div class="feature-card">
+        <div><span class="badge">READY</span><h3>Browse. Choose.<br>Go to the store.</h3><p>This app is a mobile storefront launcher — no checkout or account system is included yet.</p></div>
+        <a class="outline" href="https://itworldjersey.store/">Open Website →</a>
+      </div>
+    </section>
+
+    <section class="links">
+      <a href="https://itworldjersey.store/legal"><span>Legal</span><span>›</span></a>
+      <a href="https://itworldjersey.store/privacypolicy"><span>Privacy Policy</span><span>›</span></a>
+      <a href="https://itworldjersey.store/terms"><span>Terms &amp; Conditions</span><span>›</span></a>
+      <a href="https://itworldjersey.store/company"><span>Help &amp; Contact</span><span>›</span></a>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="active" href="https://itworldjersey.store/"><span>⌂</span><b>Home</b></a>
+    <a href="https://itworldjersey.store/gallery"><span>👕</span><b>Team</b></a>
+    <a href="https://itworldjersey.store/shop"><span>🛍</span><b>Shop</b></a>
+    <a href="https://itworldjersey.store/video"><span>▶</span><b>Order</b></a>
+    <a href="https://itworldjersey.store/custom"><span>✍</span><b>Account</b></a>
+  </nav>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
