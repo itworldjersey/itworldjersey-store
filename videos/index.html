@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070a0f">
+<meta name="description" content="IT WORLD JERSEY Videos — video catalog 0001 to 1200 delivered from Cloudflare R2.">
+<title>IT WORLD JERSEY | Videos</title>
+<link rel="stylesheet" href="videos.css">
+<script src="videos.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../">IT WORLD <b>JERSEY</b></a>
+  <nav><a href="../">Home</a><a class="active" href="./">Videos</a><a href="../shop/">Shop</a><a href="../custom-design.html">Custom Design</a></nav>
+  <div class="search"><input id="searchInput" type="search" placeholder="Search videos 0001–1200" aria-label="Search videos"><button id="searchBtn">Search</button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="eyebrow">IT WORLD JERSEY • VIDEO LIBRARY</span>
+    <h1>Football Jersey <em>Videos</em></h1>
+    <p>Browse video previews from <strong>0001</strong> to <strong>1200</strong>. Video delivery uses the Cloudflare R2 domain <code>video.itworldjersey.store</code>.</p>
+  </div>
+  <div class="hero-badge"><span>1,200</span><small>VIDEO SLOTS</small></div>
+</section>
+
+<section class="toolbar">
+  <div><strong id="resultCount">0 videos</strong><span id="resultHint">Showing the first 24</span></div>
+  <div class="controls"><button data-view="grid" class="view-btn active">▦ Grid</button><button data-view="compact" class="view-btn">▤ Compact</button></div>
+</section>
+
+<section id="videoGrid" class="video-grid" aria-live="polite"></section>
+<div id="empty" class="empty" hidden>No matching videos found.</div>
+<button id="loadMore" class="load-more" type="button">Load more videos</button>
+</main>
+
+<dialog id="playerDialog" class="player-dialog">
+  <form method="dialog" class="dialog-close"><button aria-label="Close video player">×</button></form>
+  <div class="player-shell">
+    <video id="mainPlayer" controls playsinline preload="metadata"></video>
+    <div class="player-meta"><div><span id="playerId"></span><h2 id="playerTitle"></h2></div><a id="openSource" target="_blank" rel="noopener">Open video ↗</a></div>
+  </div>
+</dialog>
+
+<footer><a href="../">IT WORLD JERSEY</a><span>Video catalog 0001–1200</span><span>© 2026 IT WORLD JERSEY</span></footer>
+</body>
+</html>
