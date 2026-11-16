@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b10">
+<meta name="description" content="Find your next football jersey with the IT WORLD JERSEY Finder. Explore ready designs, build a custom team look, and request current prices through WhatsApp.">
+<link rel="canonical" href="https://itworldjersey.store/web">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jersey Finder | IT WORLD JERSEY">
+<meta property="og:description" content="A smarter way to explore jersey designs and request the right options.">
+<meta property="og:url" content="https://itworldjersey.store/web">
+<title>Jersey Finder | IT WORLD JERSEY</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20261031-1">
+<link rel="stylesheet" href="/styles.css?v=20261116-1">
+<style>
+:root{--wf-red:#ff1738;--wf-ink:#080b10;--wf-paper:#f4f5f7;--wf-muted:#667080;--wf-line:#e3e6eb}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{background:var(--wf-paper);color:#111722}
+.web-topline{background:#050609;color:#d8dce4;font-size:12px}
+.web-topline .wrap{display:flex;gap:22px;align-items:center;min-height:34px}
+.web-topline span:last-child{margin-left:auto}
+.web-topline a:hover{color:#fff}
+.web-header{background:#080b10;color:#fff;position:sticky;top:0;z-index:30;border-bottom:1px solid #262c36}
+.web-header-inner{min-height:72px;display:flex;align-items:center;gap:25px}
+.web-brand{display:flex;align-items:center;gap:10px;font-weight:950;font-size:21px;line-height:1;white-space:nowrap}
+.web-brand img{width:43px;height:43px;object-fit:cover;border-radius:8px}
+.web-brand b{color:var(--wf-red)}
+.web-brand small{display:block;color:#aeb7c5;font-size:8px;letter-spacing:1.5px;margin-top:6px}
+.web-nav{display:flex;align-items:center;gap:8px;margin-left:auto}
+.web-nav a{color:#f5f7fb;border:1px solid #2b3340;background:#161c26;border-radius:8px;padding:10px 13px;font-size:12px;font-weight:850}
+.web-nav a:hover,.web-nav a:focus-visible{border-color:#ff6279;background:#252d3a}
+.web-nav .web-nav-cta{background:var(--wf-red);border-color:var(--wf-red)}
+.web-menu{display:none}
+.web-hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 35%,#173a54 0,#0b1a29 34%,#070a10 72%);color:#fff;min-height:510px}
+.web-hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(116deg,transparent 0 80px,#fff 81px,#fff 82px);opacity:.025;pointer-events:none}
+.web-hero:after{content:"";position:absolute;width:570px;height:570px;border:1px solid #ffffff10;border-radius:50%;right:10%;top:-15%;box-shadow:0 0 0 45px #ffffff05,0 0 0 100px #ffffff03;pointer-events:none}
+.web-hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;min-height:510px;padding-top:45px;padding-bottom:50px}
+.web-kicker{display:inline-flex;align-items:center;gap:9px;color:#ff8a9c;font-size:11px;font-weight:900;letter-spacing:3.1px;text-transform:uppercase}
+.web-kicker:before{content:"";display:block;width:26px;height:2px;background:var(--wf-red)}
+.web-hero h1{font-size:clamp(42px,6.2vw,82px);line-height:.9;letter-spacing:-3px;margin:20px 0 18px;font-weight:1000}
+.web-hero h1 em{display:block;font-style:normal;color:var(--wf-red)}
+.web-hero-copy{max-width:550px;color:#c4ccd8;font-size:16px;line-height:1.75}
+.web-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.web-button{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 18px;border:1px solid transparent;border-radius:8px;font-size:13px;font-weight:900;transition:transform .2s,background .2s}
+.web-button:hover{transform:translateY(-2px)}
+.web-button-primary{background:var(--wf-red);color:#fff;box-shadow:0 8px 22px #ff17382e}
+.web-button-outline{border-color:#596576;color:#fff;background:#ffffff08}
+.web-trustline{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#aeb8c7;font-size:11px}
+.web-trustline span:before{content:"✓";color:#ff6a80;font-weight:900;margin-right:7px}
+.web-stage{position:relative;min-height:380px;display:grid;place-items:center}
+.web-stage-glow{position:absolute;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,#ff17383d 0,transparent 68%);filter:blur(8px)}
+.web-stage-card{position:relative;width:min(390px,90%);min-height:345px;border:1px solid #ffffff28;border-radius:22px;background:linear-gradient(145deg,#ffffff16,#ffffff05);box-shadow:0 24px 70px #0008;backdrop-filter:blur(8px);transform:rotate(3deg);padding:25px 26px;overflow:hidden}
+.web-stage-card:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 15%,#ffffff0c 50%,transparent 80%);pointer-events:none}
+.web-stage-top{display:flex;justify-content:space-between;align-items:center;color:#c3cbd7;font-size:10px;font-weight:900;letter-spacing:2px}
+.web-stage-top b{color:#ff6a80}
+.web-jersey-art{display:block;width:100%;height:235px;margin:12px auto 0;filter:drop-shadow(0 20px 18px #0009)}
+.web-stage-bottom{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-top:-6px}
+.web-stage-bottom strong{font-size:22px;line-height:1}
+.web-stage-bottom span{color:#b8c3d1;font-size:10px;letter-spacing:1.7px;text-align:right}
+.web-float{position:absolute;z-index:2;border:1px solid #ffffff2b;background:#101925e8;color:#fff;border-radius:10px;padding:11px 13px;box-shadow:0 12px 30px #0006}
+.web-float strong{display:block;font-size:15px}.web-float small{display:block;color:#b7c0cc;font-size:9px;letter-spacing:1.2px;margin-top:3px}
+.web-float-a{top:23px;right:-5px;transform:rotate(5deg)}.web-float-b{bottom:32px;left:-12px;transform:rotate(-5deg)}
+.web-intro-strip{background:#fff;border-bottom:1px solid var(--wf-line)}
+.web-intro-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.web-intro-item{display:flex;gap:13px;align-items:center;padding:21px 24px;border-right:1px solid var(--wf-line)}
+.web-intro-item:first-child{padding-left:0}.web-intro-item:last-child{border:0}
+.web-intro-icon{width:38px;height:38px;display:grid;place-items:center;flex:0 0 auto;border-radius:11px;background:#fff0f2;color:#d90029;font-weight:1000;font-size:19px}
+.web-intro-item strong{display:block;font-size:13px}.web-intro-item small{display:block;color:var(--wf-muted);font-size:11px;margin-top:3px}
+.web-section{padding:66px 0}
+.web-section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:25px}
+.web-eyebrow{display:block;color:#d90029;font-size:10px;letter-spacing:3px;font-weight:950;text-transform:uppercase;margin-bottom:8px}
+.web-section-heading h2{margin:0;font-size:clamp(27px,4vw,42px);line-height:1.02;letter-spacing:-1.3px;color:#101722}
+.web-section-heading p{max-width:460px;margin:0;color:#667080;font-size:13px;line-height:1.7}
+.web-journeys{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.web-journey{position:relative;min-height:250px;border-radius:15px;overflow:hidden;padding:24px;color:#fff;background:linear-gradient(140deg,#101a29,#05080e);isolation:isolate}
+.web-journey:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 90% 18%,#ff173855,transparent 42%),linear-gradient(120deg,transparent,#ffffff08)}
+.web-journey:nth-child(2){background:linear-gradient(135deg,#0d2b40,#07121d)}
+.web-journey:nth-child(2):before{background:radial-gradient(circle at 90% 18%,#258bc655,transparent 45%)}
+.web-journey:nth-child(3){background:linear-gradient(135deg,#351521,#0c0d14)}
+.web-journey:nth-child(3):before{background:radial-gradient(circle at 90% 18%,#ff315955,transparent 45%)}
+.web-journey-no{display:block;color:#ff8a9c;font-size:10px;letter-spacing:2px;font-weight:950}
+.web-journey h3{font-size:23px;margin:34px 0 8px;line-height:1.05}
+.web-journey p{max-width:290px;color:#c3cbd6;font-size:12px;line-height:1.65;margin:0 0 22px}
+.web-journey a{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff6a;border-radius:7px;padding:9px 12px;font-size:11px;font-weight:900}
+.web-journey a:hover{background:#ffffff18}
+.web-journey-symbol{position:absolute;right:19px;top:45px;font-size:64px;opacity:.2;font-weight:1000;line-height:1}
+.web-finder-section{background:#e9edf2;padding:68px 0}
+.web-finder-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:30px;align-items:start}
+.web-finder-aside{position:sticky;top:115px}
+.web-finder-aside h2{font-size:clamp(30px,4vw,45px);line-height:.98;letter-spacing:-1.5px;margin:0 0 14px}
+.web-finder-aside p{color:#606b7b;font-size:13px;line-height:1.75;max-width:370px}
+.web-finder-aside .web-note{margin-top:23px;padding:15px;border-left:3px solid var(--wf-red);background:#fff;color:#596576;font-size:11px;line-height:1.6}
+.web-builder{background:#fff;border:1px solid #dfe4eb;border-radius:17px;padding:clamp(20px,3.2vw,34px);box-shadow:0 18px 45px #101d2a0c}
+.web-builder-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:17px;border-bottom:1px solid var(--wf-line)}
+.web-builder-head strong{font-size:15px}.web-builder-head span{font-size:10px;color:#707b8b;letter-spacing:1px;font-weight:900}
+.web-step{padding:21px 0;border-bottom:1px solid var(--wf-line)}
+.web-step:last-of-type{border:0}
+.web-step-label{display:flex;gap:11px;align-items:center;margin-bottom:13px}
+.web-step-num{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#111925;color:#fff;font-size:11px;font-weight:900}
+.web-step-label strong{font-size:14px}.web-step-label small{display:block;color:#798392;font-size:10px;margin-top:2px}
+.web-options{display:flex;flex-wrap:wrap;gap:8px}
+.web-option{border:1px solid #d9dee6;background:#fff;color:#263243;border-radius:8px;padding:10px 12px;font-size:11px;font-weight:800;min-height:39px}
+.web-option:hover{border-color:#b70025}
+.web-option[aria-pressed="true"]{background:#111925;border-color:#111925;color:#fff;box-shadow:0 4px 12px #121c2a20}
+.web-builder-result{padding:16px;background:#f5f6f8;border-radius:11px;margin-top:18px}
+.web-builder-result-top{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#6e7989;font-weight:900;letter-spacing:1px;margin-bottom:8px}
+.web-builder-result p{margin:0;color:#263243;font-size:12px;line-height:1.6}
+.web-builder-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px}
+.web-builder-actions .web-button{border:0;cursor:pointer}
+.web-builder-actions small{color:#6d7786;font-size:10px}
+.web-spotlight{padding-top:72px;padding-bottom:72px;background:#fff}
+.web-design-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.web-design-card{border:1px solid var(--wf-line);background:#fff;border-radius:13px;overflow:hidden;min-width:0;transition:transform .2s,box-shadow .2s}
+.web-design-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px #0c172416}
+.web-design-image{display:block;aspect-ratio:1/1;background:linear-gradient(135deg,#f1f3f6,#fff);overflow:hidden}
+.web-design-image img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transition:transform .35s}
+.web-design-card:hover img{transform:scale(1.05)}
+.web-design-meta{padding:12px}
+.web-design-meta small{display:block;color:#8a94a2;font-size:9px;font-weight:900;letter-spacing:1.4px}
+.web-design-meta strong{display:block;font-size:14px;margin:3px 0 10px}
+.web-design-meta a{color:#d90029;font-size:11px;font-weight:900}
+.web-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.web-process{padding:22px;border:1px solid #e2e6ec;border-radius:13px;background:#fff}
+.web-process b{font-size:11px;color:#d90029;letter-spacing:2px}
+.web-process h3{font-size:17px;margin:17px 0 7px}
+.web-process p{font-size:12px;line-height:1.7;color:#657080;margin:0}
+.web-final-cta{position:relative;overflow:hidden;background:#090d14;color:#fff;padding:48px 0}
+.web-final-cta:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff10;border-radius:50%;right:7%;top:-50%;box-shadow:0 0 0 55px #ffffff04,0 0 0 110px #ffffff03}
+.web-final-inner{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.web-final-inner h2{font-size:clamp(26px,4vw,40px);line-height:1;margin:0 0 9px}
+.web-final-inner p{color:#bcc5d2;font-size:12px;margin:0}
+.web-footer{margin:0}
+.web-footer-main{display:grid;grid-template-columns:1.1fr .9fr .9fr 1.1fr;gap:24px;padding:26px 0;border-bottom:1px solid #ffffff20}
+.web-footer-col{display:flex;flex-direction:column;gap:8px;font-size:11px;color:#c4cbd6}
+.web-footer-col b{color:#fff;font-size:11px;margin-bottom:4px}
+.web-footer-col p{margin:0;line-height:1.7;color:#abb5c3}
+.web-footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:14px 0;font-size:10px;color:#c3cbd7}
+.web-footer-bottom nav{display:flex;gap:14px;flex-wrap:wrap}
+.web-footer-bottom a:hover,.web-footer-col a:hover{color:#ff7589}
+@media(max-width:980px){
+ .web-header-inner{gap:14px}.web-nav a{padding:9px 10px;font-size:11px}
+ .web-hero-inner{grid-template-columns:1fr .85fr;gap:15px}.web-stage-card{width:100%}
+ .web-finder-layout{grid-template-columns:.68fr 1.32fr;gap:18px}
+ .web-design-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:720px){
+ .web-topline .wrap{gap:12px;font-size:10px}.web-header-inner{min-height:64px}
+ .web-brand{font-size:18px}.web-brand img{width:38px;height:38px}
+ .web-menu{display:block;margin-left:auto;background:#202733;color:#fff;border:1px solid #3a4351;border-radius:8px;padding:9px 11px;font-weight:900}
+ .web-nav{display:none;position:absolute;top:64px;left:0;right:0;background:#090d14;padding:13px 20px 17px;border-bottom:1px solid #28303b;flex-direction:column;align-items:stretch}
+ .web-nav.is-open{display:flex}.web-nav a{text-align:center}
+ .web-hero-inner{grid-template-columns:1fr;padding-top:52px;padding-bottom:30px;gap:12px}
+ .web-hero{min-height:0}.web-hero h1{font-size:clamp(45px,12vw,66px)}
+ .web-hero-copy{font-size:14px}.web-stage{min-height:300px;margin:0 auto;width:min(420px,100%)}
+ .web-stage-card{min-height:288px;padding:20px}.web-jersey-art{height:190px}
+ .web-stage-bottom strong{font-size:19px}.web-float-a{right:0}.web-float-b{left:0;bottom:13px}
+ .web-intro-inner{grid-template-columns:1fr}.web-intro-item{padding:13px 0;border-right:0;border-bottom:1px solid var(--wf-line)}
+ .web-intro-item:last-child{border-bottom:0}
+ .web-section,.web-finder-section{padding:48px 0}
+ .web-section-heading{display:block}.web-section-heading p{margin-top:12px}
+ .web-journeys{grid-template-columns:1fr}.web-journey{min-height:210px}.web-journey h3{margin-top:25px}
+ .web-finder-layout{grid-template-columns:1fr;gap:20px}.web-finder-aside{position:static}
+ .web-finder-aside h2{max-width:440px}.web-finder-aside p{max-width:550px}
+ .web-design-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+ .web-steps{grid-template-columns:1fr}.web-final-inner{display:block}.web-final-inner .web-button{margin-top:20px}
+ .web-footer-main{grid-template-columns:repeat(2,1fr);gap:20px}
+}
+@media(max-width:390px){
+ .web-topline .wrap{gap:8px}.web-topline span:last-child{display:none}
+ .web-hero-actions{display:grid}.web-button{width:100%}
+ .web-builder{padding:17px}.web-option{padding:9px 10px}
+ .web-footer-main{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="web-topline"><div class="wrap">
+<a href="https://wa.me/601126238907">☎ +60 11-2623 8907</a>
+<a href="mailto:itworldjersey@gmail.com">✉ itworldjersey@gmail.com</a>
+<span>Malaysia · RM</span>
+</div></div>
+<header class="web-header">
+<div class="wrap web-header-inner">
+<a class="web-brand" href="/"><img src="/assets/itworldkl-jersey-shop.jpg" alt="IT WORLD JERSEY"><span>IT WORLD <b>JERSEY</b><small>WEAR YOUR PASSION</small></span></a>
+<button class="web-menu" id="webMenu" type="button" aria-expanded="false" aria-controls="webNav">☰ Menu</button>
+<nav class="web-nav" id="webNav" aria-label="Main navigation">
+<a href="/">Home</a><a href="/shop/">Shop</a><a href="/gallery/">Gallery</a><a href="/custom-design.html">Custom Design</a><a class="web-nav-cta" href="#jersey-finder">Find My Jersey</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="web-hero">
+<div class="wrap web-hero-inner">
+<div>
+<span class="web-kicker">IT WORLD JERSEY · THE WEB EXPERIENCE</span>
+<h1>FIND YOUR NEXT <em>MATCHDAY IDENTITY.</em></h1>
+<p class="web-hero-copy">Not sure where to start? Tell us what you are looking for. Explore ready-to-browse designs, build a team look, or send a clear request to our jersey team.</p>
+<div class="web-hero-actions">
+<a class="web-button web-button-primary" href="#jersey-finder">Start Jersey Finder <span aria-hidden="true">→</span></a>
+<a class="web-button web-button-outline" href="/shop/">Explore the Collection</a>
+</div>
+<div class="web-trustline"><span>Browse design references</span><span>Custom team enquiries</span><span>WhatsApp support</span></div>
+</div>
+<div class="web-stage" aria-label="Illustrated football jersey design">
+<div class="web-stage-glow"></div>
+<div class="web-stage-card">
+<div class="web-stage-top"><span>IT WORLD / KIT LAB</span><b>01 — 03</b></div>
+<svg class="web-jersey-art" viewBox="0 0 360 280" role="img" aria-label="Original illustrated red and black football jersey">
+<defs>
+<linearGradient id="shirtFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fb4058"/><stop offset=".48" stop-color="#bd102e"/><stop offset="1" stop-color="#520b1b"/></linearGradient>
+<linearGradient id="shirtShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".23"/><stop offset="1" stop-color="#000000" stop-opacity=".24"/></linearGradient>
+<clipPath id="shirtClip"><path d="M110 35 144 20 161 39Q180 60 199 39L216 20 250 35 316 73 287 133 253 116 253 257 107 257 107 116 73 133 44 73Z"/></clipPath>
+</defs>
+<path d="M110 35 144 20 161 39Q180 60 199 39L216 20 250 35 316 73 287 133 253 116 253 257 107 257 107 116 73 133 44 73Z" fill="url(#shirtFill)" stroke="#ff9aa8" stroke-width="3" stroke-linejoin="round"/>
+<g clip-path="url(#shirtClip)" opacity=".9">
+<path d="M30 95 330 20M25 135 335 60M25 175 335 100M25 215 335 140M25 255 335 180" stroke="#111722" stroke-width="20" opacity=".55"/>
+<path d="M30 110 330 35M30 150 330 75M30 190 330 115M30 230 330 155" stroke="#ffffff" stroke-width="3" opacity=".22"/>
+<path d="M180 20V270" stroke="#fff" stroke-width="2" opacity=".15"/>
+<rect x="44" y="20" width="272" height="245" fill="url(#shirtShade)"/>
+</g>
+<path d="M144 20Q180 76 216 20" fill="none" stroke="#f0e7e9" stroke-width="8"/>
+<path d="M157 31Q180 57 203 31" fill="none" stroke="#111722" stroke-width="5"/>
+<path d="M126 54 109 111M234 54 251 111" stroke="#ffd4da" stroke-width="4" opacity=".55"/>
+<text x="180" y="164" text-anchor="middle" fill="#fff" font-size="57" font-family="Arial,sans-serif" font-weight="900">10</text>
+<text x="180" y="188" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial,sans-serif" font-weight="700" letter-spacing="3">YOUR STORY</text>
+<path d="M107 257H253" stroke="#ff9aa8" stroke-width="3"/>
+</svg>
+<div class="web-stage-bottom"><strong>YOUR TEAM.<br>YOUR STORY.</strong><span>DESIGN STARTS<br>WITH YOU</span></div>
+</div>
+<div class="web-float web-float-a"><strong>01 / DISCOVER</strong><small>Find a design direction</small></div>
+<div class="web-float web-float-b"><strong>02 / MAKE IT YOURS</strong><small>Build a custom request</small></div>
+</div>
+</div>
+</section>
+<section class="web-intro-strip" aria-label="Ways to use the Jersey Finder">
+<div class="wrap web-intro-inner">
+<div class="web-intro-item"><span class="web-intro-icon">◎</span><div><strong>Explore at your pace</strong><small>Browse the catalog and visual gallery</small></div></div>
+<div class="web-intro-item"><span class="web-intro-icon">✎</span><div><strong>Make your own brief</strong><small>Tell us the style and quantity you need</small></div></div>
+<div class="web-intro-item"><span class="web-intro-icon">↗</span><div><strong>Talk to the team</strong><small>Continue your enquiry through WhatsApp</small></div></div>
+</div>
+</section>
+
+<section class="web-section">
+<div class="wrap">
+<div class="web-section-heading">
+<div><span class="web-eyebrow">Choose your route</span><h2>Three ways to get started.</h2></div>
+<p>One store, three simple starting points. Go straight to the collection, view designs visually, or start a custom jersey request.</p>
+</div>
+<div class="web-journeys">
+<article class="web-journey"><span class="web-journey-no">ROUTE 01 · READY DESIGNS</span><span class="web-journey-symbol" aria-hidden="true">01</span><h3>Find a jersey<br>to wear now.</h3><p>Browse the current catalog by design number and view the options before asking about price and availability.</p><a href="/shop/">Open the Shop <span aria-hidden="true">→</span></a></article>
+<article class="web-journey"><span class="web-journey-no">ROUTE 02 · VISUAL BROWSING</span><span class="web-journey-symbol" aria-hidden="true">02</span><h3>See the design<br>before you ask.</h3><p>Use the image gallery to scan the visual collection and send us the reference you like.</p><a href="/gallery/">Explore the Gallery <span aria-hidden="true">→</span></a></article>
+<article class="web-journey"><span class="web-journey-no">ROUTE 03 · YOUR OWN KIT</span><span class="web-journey-symbol" aria-hidden="true">03</span><h3>Create a look<br>for your team.</h3><p>Open the custom studio to shape your colors, team name, player details and design direction.</p><a href="/custom-design.html">Open Custom Studio <span aria-hidden="true">→</span></a></article>
+</div>
+</div>
+</section>
+
+<section class="web-finder-section" id="jersey-finder">
+<div class="wrap web-finder-layout">
+<div class="web-finder-aside">
+<span class="web-eyebrow">The Jersey Finder</span>
+<h2>Make your first message count.</h2>
+<p>Choose a few details and we will prepare a WhatsApp enquiry for you. It helps our team understand what to recommend and what details to confirm.</p>
+<div class="web-note">No payment is made here. Final design, product availability, price in RM and delivery details must be confirmed with IT WORLD JERSEY before an order is accepted.</div>
+</div>
+<div class="web-builder">
+<div class="web-builder-head"><strong>Your Jersey Brief</strong><span>3 QUICK CHOICES</span></div>
+<div class="web-step" data-step="purpose">
+<div class="web-step-label"><span class="web-step-num">1</span><div><strong>What are you looking for?</strong><small>Choose the reason for your enquiry</small></div></div>
+<div class="web-options">
+<button class="web-option" type="button" data-group="purpose" data-value="A jersey for myself" aria-pressed="true">For myself</button>
+<button class="web-option" type="button" data-group="purpose" data-value="Jerseys for a team or group" aria-pressed="false">Team / Group</button>
+<button class="web-option" type="button" data-group="purpose" data-value="A jersey as a gift" aria-pressed="false">Gift</button>
+</div>
+</div>
+<div class="web-step" data-step="style">
+<div class="web-step-label"><span class="web-step-num">2</span><div><strong>Which direction do you like?</strong><small>Pick the look that feels right</small></div></div>
+<div class="web-options">
+<button class="web-option" type="button" data-group="style" data-value="Classic and timeless" aria-pressed="true">Classic</button>
+<button class="web-option" type="button" data-group="style" data-value="Bold and standout" aria-pressed="false">Bold</button>
+<button class="web-option" type="button" data-group="style" data-value="Clean and minimal" aria-pressed="false">Minimal</button>
+<button class="web-option" type="button" data-group="style" data-value="A custom team design" aria-pressed="false">Custom</button>
+</div>
+</div>
+<div class="web-step" data-step="quantity">
+<div class="web-step-label"><span class="web-step-num">3</span><div><strong>How many do you need?</strong><small>An estimate is fine; confirm the final quantity with our team</small></div></div>
+<div class="web-options">
+<button class="web-option" type="button" data-group="quantity" data-value="1 piece" aria-pressed="true">1 piece</button>
+<button class="web-option" type="button" data-group="quantity" data-value="2 to 5 pieces" aria-pressed="false">2–5 pieces</button>
+<button class="web-option" type="button" data-group="quantity" data-value="6 or more pieces" aria-pressed="false">6+ pieces</button>
+</div>
+</div>
+<div class="web-builder-result" aria-live="polite">
+<div class="web-builder-result-top"><span>YOUR REQUEST SUMMARY</span><span id="webProgress">3 / 3 SELECTED</span></div>
+<p id="webBriefPreview">I am looking for a jersey for myself, in a classic and timeless style. Estimated quantity: 1 piece. Please share suitable designs, current prices in RM and delivery options.</p>
+</div>
+<div class="web-builder-actions">
+<a class="web-button web-button-primary" id="webWhatsApp" href="https://wa.me/601126238907" target="_blank" rel="noopener">Send Brief on WhatsApp <span aria-hidden="true">↗</span></a>
+<small>Opens WhatsApp with your selections filled in.</small>
+</div>
+</div>
+</div>
+</section>
+
+<section class="web-section web-spotlight">
+<div class="wrap">
+<div class="web-section-heading">
+<div><span class="web-eyebrow">A few places to begin</span><h2>Browse by design number.</h2></div>
+<p>These are sample references from the existing catalog. Open the shop to continue browsing and ask the team to confirm availability.</p>
+</div>
+<div class="web-design-grid">
+<article class="web-design-card"><a class="web-design-image" href="/shop/" aria-label="Browse Design 0001"><img src="https://order.itworldjersey.store/No%230001%20to%200100/Product%200001.webp" alt="IT WORLD JERSEY catalog reference Design 0001" loading="lazy"></a><div class="web-design-meta"><small>CATALOG REFERENCE</small><strong>Design 0001</strong><a href="/shop/">View in Shop →</a></div></article>
+<article class="web-design-card"><a class="web-design-image" href="/shop/" aria-label="Browse Design 0008"><img src="https://order.itworldjersey.store/No%230001%20to%200100/Product%200008.webp" alt="IT WORLD JERSEY catalog reference Design 0008" loading="lazy"></a><div class="web-design-meta"><small>CATALOG REFERENCE</small><strong>Design 0008</strong><a href="/shop/">View in Shop →</a></div></article>
+<article class="web-design-card"><a class="web-design-image" href="/shop/" aria-label="Browse Design 0020"><img src="https://order.itworldjersey.store/No%230001%20to%200100/Product%200020.webp" alt="IT WORLD JERSEY catalog reference Design 0020" loading="lazy"></a><div class="web-design-meta"><small>CATALOG REFERENCE</small><strong>Design 0020</strong><a href="/shop/">View in Shop →</a></div></article>
+<article class="web-design-card"><a class="web-design-image" href="/shop/" aria-label="Browse Design 0058"><img src="https://order.itworldjersey.store/No%230001%20to%200100/Product%200058.webp" alt="IT WORLD JERSEY catalog reference Design 0058" loading="lazy"></a><div class="web-design-meta"><small>CATALOG REFERENCE</small><strong>Design 0058</strong><a href="/shop/">View in Shop →</a></div></article>
+</div>
+</div>
+</section>
+
+<section class="web-section" style="padding-top:0">
+<div class="wrap">
+<div class="web-section-heading"><div><span class="web-eyebrow">Simple from start to finish</span><h2>How your enquiry moves.</h2></div><p>Use the page to prepare a request. The order details are confirmed directly with the store.</p></div>
+<div class="web-steps">
+<article class="web-process"><b>01 / EXPLORE</b><h3>Choose a reference.</h3><p>Browse the shop or gallery, or use the finder to describe the jersey you have in mind.</p></article>
+<article class="web-process"><b>02 / DISCUSS</b><h3>Send your enquiry.</h3><p>Share the design number, style direction, quantity and any team or customization details with us.</p></article>
+<article class="web-process"><b>03 / CONFIRM</b><h3>Review the details.</h3><p>We confirm the final design, specifications, total price and delivery details before accepting the order.</p></article>
+</div>
+</div>
+</section>
+
+<section class="web-final-cta">
+<div class="wrap web-final-inner">
+<div><h2>Ready to find your jersey?</h2><p>Start with the catalog, or tell us what you need in a short message.</p></div>
+<a class="web-button web-button-primary" href="#jersey-finder">Build My Jersey Brief →</a>
+</div>
+</section>
+</main>
+
+<footer class="footer web-footer">
+<div class="wrap web-footer-main">
+<div class="web-footer-col"><b>IT WORLD JERSEY</b><p>Wear your passion. Explore jersey references, request custom designs and contact our team for current product details.</p></div>
+<div class="web-footer-col"><b>EXPLORE</b><a href="/shop/">Shop All Jerseys</a><a href="/gallery/">Image Gallery</a><a href="/custom-design.html">Custom Design</a></div>
+<div class="web-footer-col"><b>INFORMATION</b><a href="/company.html">Company</a><a href="/terms.html">Terms &amp; Conditions</a><a href="/privacypolicy.html">Privacy Policy</a></div>
+<div class="web-footer-col"><b>CONTACT</b><a href="tel:+601126238907">+60 11-2623 8907</a><a href="https://wa.me/601126238907">WhatsApp Support</a><a href="mailto:itworldjersey@gmail.com">itworldjersey@gmail.com</a><span>Kuala Lumpur, Malaysia</span></div>
+</div>
+<div class="wrap web-footer-bottom">
+<span>⚽ <b>IT WORLD <em>JERSEY</em></b></span>
+<nav><a href="/">Home</a><a href="/terms.html">Terms</a><a href="/privacypolicy.html">Privacy</a></nav>
+<span>© 2026 IT WORLD JERSEY. All Rights Reserved.</span>
+</div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var state={purpose:"A jersey for myself",style:"Classic and timeless",quantity:"1 piece"};
+var preview=document.getElementById("webBriefPreview");
+var whatsapp=document.getElementById("webWhatsApp");
+var summaryTop=document.getElementById("webProgress");
+var menu=document.getElementById("webMenu");
+var nav=document.getElementById("webNav");
+function message(){
+return "Hello IT WORLD JERSEY! I would like help finding a jersey.\\n\\n"+
+"Shopping for: "+state.purpose+"\\n"+
+"Preferred style: "+state.style+"\\n"+
+"Estimated quantity: "+state.quantity+"\\n\\n"+
+"Please share suitable design references, current prices in RM, available sizes and delivery options. I will confirm the final details with your team.\\n\\nThank you!";
+}
+function refresh(){
+preview.textContent="I am looking for "+state.purpose.toLowerCase()+", with a "+state.style.toLowerCase()+" direction. Estimated quantity: "+state.quantity+". Please share suitable designs, current prices in RM and delivery options.";
+whatsapp.href="https://wa.me/601126238907?text="+encodeURIComponent(message());
+summaryTop.textContent="3 / 3 SELECTED";
+}
+document.querySelectorAll(".web-option").forEach(function(button){
+button.addEventListener("click",function(){
+var group=button.getAttribute("data-group");
+document.querySelectorAll('.web-option[data-group="'+group+'"]').forEach(function(item){
+item.setAttribute("aria-pressed",item===button?"true":"false");
+});
+state[group]=button.getAttribute("data-value");
+refresh();
+});
+});
+menu.addEventListener("click",function(){
+var open=menu.getAttribute("aria-expanded")==="true";
+menu.setAttribute("aria-expanded",open?"false":"true");
+nav.classList.toggle("is-open",!open);
+});
+nav.querySelectorAll("a").forEach(function(link){
+link.addEventListener("click",function(){
+nav.classList.remove("is-open");
+menu.setAttribute("aria-expanded","false");
+});
+});
+refresh();
+})();
+</script>
+</body>
+</html>
